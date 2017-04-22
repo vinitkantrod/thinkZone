@@ -1,0 +1,26 @@
+{
+  "name": "thinklab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinit kantrod",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "composable-middleware": "^0.3.0",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "lodash": "^4.6.1",
+    "method-override": "^2.3.5",
+    "moment": "^2.12.0",
+    "moment-timezone": "^0.5.3",
+    "mongoose": "^4.4.7",
+    "morgan": "~1.6.1",
+    "promise": "^7.1.1",
+    "serve-favicon": "~2.3.0"
+  }
+}
