@@ -5,8 +5,8 @@ var Schema = mongoose.Schema;
 
 var Record = new Schema({
     userId: {type: String},
-    courseList: [{type: String}],
-    studentList: [{type: String}],
+    courseList: [{type: ObjectId}],
+    studentList: [{type: ObjectId}],
     createdOn: {type: Number, default: new Date().getTime()},
 })
 

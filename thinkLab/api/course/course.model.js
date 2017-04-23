@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 var Course = new Schema({
     category: [{type: String}],
-    teachersList: [{type: String}],
+    teachersList: [{type: ObjectId}],
     adminId: {type: String},
     langauge: [{type: String, required: true}],
     createdOn: {type: Number, default: new Date().getTime()},

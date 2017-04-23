@@ -47,11 +47,7 @@ exports.fetchRecord = function(req, res) {
         .then((recordData) => {
             console.log("recordData : ", recordData);
             var courseId = recordData.courseList;
-            var courseData = courseId.map(function(x){
-                return mongoose.Types.ObjectId(x);
-            });
-            console.log(courseData);
-            var query = {_id:{$in: courseData}};
+            var query = {_id:{$in: courseId}};
             course.findAsync(query)
                 .then(responseWithResult(res, 201))
                 .catch(handleError(req.body, 404))
